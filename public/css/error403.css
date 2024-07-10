@@ -1,0 +1,47 @@
+/* Ensure the container takes up the full viewport height */
+body, html {
+    margin: 0;
+    height: 100%;
+    overflow: hidden; /* Prevent scrolling */
+}
+
+.error-403-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    position: relative; /* Ensure proper positioning */
+}
+
+.error-403-container img {
+    width: 102vw; /* Stretch the image to the full viewport width */
+    height: auto; /* Maintain aspect ratio */
+    position: absolute; /* Position the image absolutely */
+    top: 70%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Center the image */
+    z-index: -1; /* Place the image behind other elements */
+}
+
+/* Style the return button */
+/* Style the return button */
+.return-button {
+    position: relative;
+    padding: 20px 50px;
+    background-color: #FFFF00; /* Yellow color */
+    color: black;
+    font-weight: bold;
+    font-size: 16px;
+    border: none;
+    border-radius: 30px; /* Rounded corners */
+    cursor: pointer;
+    z-index: 1; /* Ensure button is above the image */
+    top: -15%;
+}
+
+/* Hover effect for the return button */
+.return-button:hover {
+    background-color: #FFD700; /* Slightly darker shade of yellow */
+}
